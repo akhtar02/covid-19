@@ -63,7 +63,7 @@
             <button
               type="button"
               class="btn btn-primary btn-lg btn-block"
-              data-bs-toggle="modal" data-bs-target="#exampleModal"
+              data-bs-toggle="modal" data-bs-target="#screening"
               onClick="startScreen()"
             >
               Start Screening
@@ -138,6 +138,191 @@
           </div>
         </div>
       </div>
+
+<!-- 
+    =======================Screening ============================= -->
+    
+
+    <div class="modal fade" id="screening" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+             <img src="img/logo.png" alt="" class="img-logo" />
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                
+              </button>
+            </div>
+            <div class="modal-body">
+               <div class="container">
+                   <div class="row q1 active">
+                       <h3>Do you have Fever above 101.4?</h3>
+                       <img src="img/1.png" alt="">
+                       <div class="bottom-question">
+                        <button onclick="recordAnswer(1,1,2)" class="btn btn-primary  btn-lg btn-block">
+                          Yes, I Do
+                        </button>
+                        <button onclick="recordAnswer(1,2,2)"class="btn btn-primary  btn-lg btn-block">
+                          Yes, I Don't
+                        </button>
+                    </div>
+                   </div>
+
+                   <div class="row q2">
+                    <h3>Do you have Cough - (Dry Cough)?</h3>
+                    <img src="img/2.png" alt="">
+                    <div class="bottom-question">
+                     <button onclick="recordAnswer(2,1,3)" class="btn btn-primary  btn-lg btn-block">
+                       Yes, I Do
+                     </button>
+                     <button onclick="recordAnswer(2,2,3)" class="btn btn-primary  btn-lg btn-block">
+                       Yes, I Don't
+                     </button>
+                 </div>
+                </div>
+
+                <div class="row q3">
+                    <h3> Do you have Cough - (Wet Cough)?</h3>
+                    <img src="img/3.png" alt="">
+                    <div class="bottom-question">
+                     <button onclick="recordAnswer(3,1,4)" class="btn btn-primary  btn-lg btn-block">
+                       Yes, I Do
+                     </button>
+                     <button onclick="recordAnswer(3,2,4)" class="btn btn-primary  btn-lg btn-block">
+                       Yes, I Don't
+                     </button>
+                 </div>
+                </div>
+
+                <div class="row q4">
+                    <h3>Do you have Shortness of Breath?</h3>
+                    <img src="img/4.png" alt="">
+                    <div class="bottom-question">
+                     <button onclick="recordAnswer(4,1,5)" class="btn btn-primary  btn-lg btn-block">
+                       Yes, I Do
+                     </button>
+                     <button onclick="recordAnswer(4,2,5)" class="btn btn-primary  btn-lg btn-block">
+                       Yes, I Don't
+                     </button>
+                 </div>
+                </div>
+
+                <div class="row q5">
+                    <h3>Do you have Flu?</h3>
+                    <img src="img/5.png" alt="">
+                    <div class="bottom-question">
+                     <button onclick="recordAnswer(5,1,6)" class="btn btn-primary  btn-lg btn-block">
+                       Yes, I Do
+                     </button>
+                     <button onclick="recordAnswer(5,2,6)" class="btn btn-primary  btn-lg btn-block">
+                       Yes, I Don't
+                     </button>
+                 </div>
+                </div>
+
+                <div class="row q6">
+                    <h3> Have you travelled abroad in the last 15 days?</h3>
+                    <img src="img/6.png" alt="">
+                    <div class="bottom-question">
+                     <button onclick="recordAnswer(6,1,7)" class="btn btn-primary  btn-lg btn-block">
+                       Yes, I Do
+                     </button>
+                     <button onclick="recordAnswer(6,2,7)" class="btn btn-primary  btn-lg btn-block">
+                       Yes, I Don't
+                     </button>
+                 </div>
+                </div>
+
+                <div class="row q7">
+                    <h3> Have you been in contact with any person who has recently travelled internationally?</h3>
+                    <img src="img/7.png" alt="">
+                    <div class="bottom-question">
+                     <button onclick="recordAnswer(7,1,8)" class="btn btn-primary  btn-lg btn-block">
+                       Yes, I Do
+                     </button>
+                     <button onclick="recordAnswer(7,2,8)" class="btn btn-primary  btn-lg btn-block">
+                       Yes, I Don't
+                     </button>
+                 </div>
+                </div>
+
+                <div class="row q8">
+                    <h3> Do you have chest infection?</h3>
+                    <img src="img/8.png" alt="">
+                    <div class="bottom-question">
+                     <button onclick="recordAnswer(8,1,9)" class="btn btn-primary  btn-lg btn-block">
+                       Yes, I Do
+                     </button>
+                     <button onclick="recordAnswer(8,2,9)" class="btn btn-primary  btn-lg btn-block">
+                       Yes, I Don't
+                     </button>
+                 </div>
+                </div>
+
+                <div class="row q9">
+                    <h3> Is your age more than or equal to 60 years of age?</h3>
+                    <img src="img/9.png" alt="">
+                    <div class="bottom-question">
+                     <button onclick="recordAnswer(9,1,10)" class="btn btn-primary  btn-lg btn-block">
+                       Yes, I Do
+                     </button>
+                     <button  onclick="recordAnswer(9,2,10)" class="btn btn-primary  btn-lg btn-block">
+                       Yes, I Don't
+                     </button>
+                 </div>
+                </div>
+
+                <div class="row q10">
+                    <h3>Due to Co-morbidities, do you take any medicine?</h3>
+                    <img src="img/10.png" alt="">
+                    <div class="bottom-question">
+                     <button onclick="recordAnswer(10,1,0)" class="btn btn-primary  btn-lg btn-block">
+                       Yes, I Do
+                     </button>
+                     <button onclick="recordAnswer(10,2,0)" class="btn btn-primary  btn-lg btn-block">
+                       Yes, I Don't
+                     </button>
+                 </div>
+                </div>
+                <div class="row result1">
+                    <h3>Result 1: High Probability of Corona!</h3>
+                    <p> 1.	Isolate From Others
+                        <br>   2.	Rest and Take Care
+                        <br> 3.	Call Work Health Providers
+                        <br> 4.	Monitor Symptoms
+                        <br> 5.	Talk to Someone About Testing
+                        <br> 6.	Follow Govt Instructions
+                        <br> As of now, your answers suggest that you may need testing. If anything changes, take the questionnaire again.
+                    </p>
+                </div>
+                <div class="row result2">
+                    <h3>Result 2: Suspected for Corona!</h3>
+                    <p> 1.	Isolate From Others
+                        <br> 2.	Rest and Take Care
+                        <br> 3.	Call Work Health Providers
+                        <br> 4.	Monitor Symptoms
+                        <br> 5.	Talk to Someone About Testing
+                        <br> 6.	Follow Govt Instructions
+                        <br> As of now, your answers suggest that you may need testing. If anything changes, take the questionnaire again.
+                        </p>
+                </div>
+                <div class="row result3">
+                    <h3>Result 3: You are all Good!</h3>
+                    <p> 1.	No Test Needed At This Time
+                      <br>  2.	Maintain Social Distance
+                      <br>  3.	Avoid groups of people and keep six feet apart from anyone who’s not part of the household. Especially avoid those showing symptoms.
+                      <br>  As of now, their answers suggest they do not need to get tested. If anything changes, take the questionnaire again.
+        </p>
+                </div>
+
+
+               </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    
+
 
 <!-- 
  =======================================  Covid19 =============================================
@@ -415,5 +600,13 @@
       </div>
     </div>
   </div>
+<script>
+    function recordAnswers(qno, ans, nqno) {
+        console.log(qno);
+        console.log(ans);
+        console.log(nqno);
+    }
+</script>
 </body>
+
 </html>

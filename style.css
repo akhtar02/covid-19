@@ -172,6 +172,10 @@
     height: 100%;
     background: white;
   }
+  .question img{
+      width: 100%;
+      margin: 20px auto;
+  }
   .question .btn {
     width: 100%;
     display: block;
@@ -182,6 +186,7 @@
       bottom: 31px;
       width: 371px;
       max-width: 80%;
+      
   }
   .question .row {
     display: none;
